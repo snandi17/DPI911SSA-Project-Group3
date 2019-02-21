@@ -13,7 +13,8 @@ You must report your progress on the job every session, starting Feb 21st, the s
 
 2- The percentage of coverage. 
 
-3- Demonstrate the results.
+3- Demonstrate the results
+
 -----------------------------------------------------------------------------------------------------------------
 
 Project Report: TimeLine
