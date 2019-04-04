@@ -66,7 +66,7 @@ Week Mar/Arp: 31 -6	Date: Thursday 4th	Report week
 
 
 
-AHMED PART : 
+Ahmed Part: 
 
 DLL Side-Loading : https://attack.mitre.org/techniques/T1073 : DONE
 
@@ -84,4 +84,7 @@ Pass the Hash : https://attack.mitre.org/techniques/T1075 : WORKING ON IT
 
 Pass the Ticket : https://attack.mitre.org/techniques/T1097 : CANNOT BE DONE
 
+Roydon Part:
+
+Data from Network Shared Drive: https://attack.mitre.org/techniques/T1039/ : Done
 
