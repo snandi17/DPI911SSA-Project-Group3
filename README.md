@@ -67,3 +67,20 @@ Week Mar/Arp: 31 -6	Date: Thursday 4th	Report week
 
 
 
+DLL Side-Loading : https://attack.mitre.org/techniques/T1073 : DONE
+
+Credentials in Registry : https://attack.mitre.org/techniques/T1214 : DONE
+
+Exploitation for Credential Access : https://attack.mitre.org/techniques/T1212 : CANNOT BE DONE
+
+Custom Cryptographic Protocol : https://attack.mitre.org/techniques/T1024 : CANNOT BE DONE
+
+Data Encoding : https://attack.mitre.org/techniques/T1132 : CANNOT BE DONE
+
+Scheduled Task : https://attack.mitre.org/techniques/T1053 : DONE
+
+Pass the Hash : https://attack.mitre.org/techniques/T1075 : WORKING ON IT
+
+Pass the Ticket : https://attack.mitre.org/techniques/T1097 : CANNOT BE DONE
+
+
