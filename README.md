@@ -66,25 +66,43 @@ Week Mar/Arp: 31 -6	Date: Thursday 4th	Report week
 
 
 
-Ahmed Part: 
+Ahmed's Part: 
 
-DLL Side-Loading : https://attack.mitre.org/techniques/T1073 : DONE
+DLL Side-Loading : https://attack.mitre.org/techniques/T1073 : Done
 
-Credentials in Registry : https://attack.mitre.org/techniques/T1214 : DONE
+Credentials in Registry : https://attack.mitre.org/techniques/T1214 : Done
 
-Exploitation for Credential Access : https://attack.mitre.org/techniques/T1212 : CANNOT BE DONE
+Exploitation for Credential Access : https://attack.mitre.org/techniques/T1212 : Cannot be done
 
-Custom Cryptographic Protocol : https://attack.mitre.org/techniques/T1024 : CANNOT BE DONE
+Custom Cryptographic Protocol : https://attack.mitre.org/techniques/T1024 : Cannot be done
 
-Data Encoding : https://attack.mitre.org/techniques/T1132 : CANNOT BE DONE
+Data Encoding : https://attack.mitre.org/techniques/T1132 : Cannot be done
 
-Scheduled Task : https://attack.mitre.org/techniques/T1053 : DONE
+Scheduled Task : https://attack.mitre.org/techniques/T1053 : Done
 
-Pass the Hash : https://attack.mitre.org/techniques/T1075 : WORKING ON IT
+Pass the Hash : https://attack.mitre.org/techniques/T1075 : Working on it
 
-Pass the Ticket : https://attack.mitre.org/techniques/T1097 : CANNOT BE DONE
+Pass the Ticket : https://attack.mitre.org/techniques/T1097 : can not be done
 
-Roydon Part:
+Roydon's Part:
 
 Data from Network Shared Drive: https://attack.mitre.org/techniques/T1039/ : Done
+
+Disabling Security Tools: https://attack.mitre.org/techniques/T1089/ : Done
+
+File Deletion: https://attack.mitre.org/techniques/T1107/ : Done
+
+Data Encrypted: https://attack.mitre.org/techniques/T1022/ : Done
+
+Graphical User interface: https://attack.mitre.org/techniques/T1061/ : Cannot be done
+
+Process Discovery: https://attack.mitre.org/techniques/T1057/ : Done
+
+Query Registry: https://attack.mitre.org/techniques/T1012/ : Done
+
+SIP Trust Provider Hijacking: https://attack.mitre.org/techniques/T1198/ : Done
+
+
+
+
 
