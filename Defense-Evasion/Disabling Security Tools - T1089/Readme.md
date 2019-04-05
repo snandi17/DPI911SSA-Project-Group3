@@ -23,7 +23,7 @@ The Atomic-Red-Team T1089 module describes the test for this technique (https://
 </p>
 
 # Detection
-Detection is done by monitoring processes and command line arguments. we look for the arguments like taskkill and fltmc.exe unload whihc could indicate tools are being disabled.
+Detection is done by monitoring processes and command line arguments. we look for the arguments like taskkill and fltmc.exe unload which could indicate tools are being disabled.
 
 ## Splunk Filter
 The following splunk query will allow us to detect these techniques
