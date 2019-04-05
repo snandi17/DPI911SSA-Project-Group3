@@ -60,22 +60,22 @@ The following splunk query will allow us to detect these techniques
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/File%20Deletion%20-%20T1107/Screenshots/Splunk-File-Powershell.PNG">
 </p>
 
-<b>Filter 3 - Splunk filter to detect vssadmin deletion</b>
+<b>Filter 3 - Splunk filter to detect vssadmin deletion:</b>
 <p align="center">
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/File%20Deletion%20-%20T1107/Screenshots/Splunk-vssadmin.PNG">
 </p>
 
-<b>Filter 4 - Splunk filter to detect wmic deletion</b>
+<b>Filter 4 - Splunk filter to detect wmic deletion:</b>
 <p align="center">
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/File%20Deletion%20-%20T1107/Screenshots/Splunk-wmic.PNG">
 </p>
 
-<b>Filter 2 - Splunk filter to detect bcdedit deletion</b>
+<b>Filter 5 - Splunk filter to detect bcdedit deletion:</b>
 <p align="center">
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/File%20Deletion%20-%20T1107/Screenshots/Splunk-wmic.PNG">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/File%20Deletion%20-%20T1107/Screenshots/Splunk-bcdedit.PNG">
 </p>
 
-<b>Filter 2 - Splunk filter to detect Unloading Sysmon driver</b>
+<b>Filter 6 - Splunk filter to detect wbadmin deletion:</b>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/File%20Deletion%20-%20T1107/Screenshots/Splunk-wbadmin.PNG">
 </p>
