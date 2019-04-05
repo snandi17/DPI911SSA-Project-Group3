@@ -28,12 +28,18 @@ Detection is done by monitoring processes and command line arguments. we look fo
 ## Splunk Filter
 The following splunk query will allow us to detect these techniques
 
-<b>Filter 1 - Splunk filter to detect Antivirus being killed</b>
+<b>Filter 1 - Splunk filter to detect command line argument of Antivirus being killed</b>
 <p align="center">
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/Disabling%20Security%20Tools%20-%20T1089/Screenshots/Splunk-Antivirus.PNG">
 </p>
 
-<b>Filter 2 - Splunk filter to detect Unloading Sysmon driver</b>
+<b>Filter 2 - Splunk filter to detect Process of Antivirus being killed</b>
+<p align="center">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/Disabling%20Security%20Tools%20-%20T1089/Screenshots/Splunk-Antivirus-2.PNG">
+</p>
+
+<b>Filter 3 - Splunk filter to detect Unloading Sysmon driver</b>
 <p align="center">
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/Disabling%20Security%20Tools%20-%20T1089/Screenshots/Splunk-Sysmon.PNG">
 </p>
+
