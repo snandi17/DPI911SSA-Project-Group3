@@ -16,12 +16,12 @@ The Atomic-Red-Team T1089 module describes the test for this technique (https://
 
 <b>Test 1 - Killing the AntiVirus process:</b>
 <p align="center">
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/Disabling%20Security%20Tools%20-%20T1089/Screenshots/Disabling-Antivirus.PNG">
+  <img src="">
 </p>
 
 <b>Test 2 - Unloading the Sysmon Driver:</b>
 <p align="center">
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/Disabling%20Security%20Tools%20-%20T1089/Screenshots/Disabling-Sysmon.PNG">
+  <img src="">
 </p>
 
 # Detection
@@ -32,15 +32,15 @@ The following splunk query will allow us to detect these techniques
 
 <b>Filter 1 - Splunk filter to detect command line argument of Antivirus being killed</b>
 <p align="center">
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/Disabling%20Security%20Tools%20-%20T1089/Screenshots/Splunk-Antivirus.PNG">
+  <img src="">
 </p>
 
 <b>Filter 2 - Splunk filter to detect Process of Antivirus being killed</b>
 <p align="center">
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/Disabling%20Security%20Tools%20-%20T1089/Screenshots/Splunk-Antivirus-2.PNG">
+  <img src="">
 </p>
 
 <b>Filter 3 - Splunk filter to detect Unloading Sysmon driver</b>
 <p align="center">
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/Disabling%20Security%20Tools%20-%20T1089/Screenshots/Splunk-Sysmon.PNG">
+  <img src="">
 </p>
