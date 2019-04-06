@@ -40,22 +40,22 @@ Detection is done by monitoring processes and command line arguments. we look fo
 ## Splunk Filter
 The following splunk query will allow us to detect these techniques
 
-<b>Filter 1 - Splunk filter to detect winrar</b>
+<b>Filter 1 - Splunk filter to detect winrar:</b>
 <p align="center">
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Exfiltration/Data%20Encrypted%20-%20T1022/Screenshots/Splunk-Winrar.PNG">
 </p>
 
-<b>Filter 2 - Splunk filter to detect winzip</b>
+<b>Filter 2 - Splunk filter to detect winzip:</b>
 <p align="center">
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Exfiltration/Data%20Encrypted%20-%20T1022/Screenshots/Splunk-winzip.PNG">
 </p>
 
-<b>Filter 3 - Splunk filter to detect 7zip</b>
+<b>Filter 3 - Splunk filter to detect 7zip:</b>
 <p align="center">
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Exfiltration/Data%20Encrypted%20-%20T1022/Screenshots/7zip-Splunk.PNG">
 </p>
 
-<b>Filter 4 - Splunk filter to detect Cipher</b>
+<b>Filter 4 - Splunk filter to detect Cipher:</b>
 <p align="center">
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Exfiltration/Data%20Encrypted%20-%20T1022/Screenshots/Cipher-Splunk.PNG">
 </p>
