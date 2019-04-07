@@ -14,14 +14,14 @@ The assumptions that we took was that the end point victim machine was already c
 # Execution
 The Atomic-Red-Team T1089 module describes the test for this technique (https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1012/T1012.md)
 
-<b>Test 1 - Killing the AntiVirus process:</b>
+<b>Test 1:</b>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Discovery/Query%20Registry%20-%20T1012/Screenshots/Reg1.PNG">
 </p>
 
-<b>Test 2 - Unloading the Sysmon Driver:</b>
+<b>Test 2:</b>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Discovery/Query%20Registry%20-%20T1012/Screenshots/Reg2.PNG">
 </p>
 
 # Detection
@@ -30,17 +30,12 @@ Detection is done by monitoring processes and command line arguments. we look fo
 ## Splunk Filter
 The following splunk query will allow us to detect these techniques
 
-<b>Filter 1 - Splunk filter to detect command line argument of Antivirus being killed</b>
+<b>Filter 1:</b>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Discovery/Query%20Registry%20-%20T1012/Screenshots/Splunk-Reg1.PNG">
 </p>
 
-<b>Filter 2 - Splunk filter to detect Process of Antivirus being killed</b>
+<b>Filter 2:</b>
 <p align="center">
-  <img src="">
-</p>
-
-<b>Filter 3 - Splunk filter to detect Unloading Sysmon driver</b>
-<p align="center">
-  <img src="">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Discovery/Query%20Registry%20-%20T1012/Screenshots/Splunk-Reg2.PNG">
 </p>
