@@ -24,7 +24,20 @@ The execution method used is from Red-Atomics atomics T1060 https://github.com/r
 # Detection
 
 ## Visibility
+Ensure that the sysmonconf-export.xml file is configured to being monitoring for registry keys recommended by MITRE ATT&CK.
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Registry%20Run%20Keys%20and%20Startup%20Folder/Screenshots/1.png">
+</p>
 
-
+Ensure that Sysmon is updated with changes to the config file.
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Registry%20Run%20Keys%20and%20Startup%20Folder/Screenshots/2.png">
+</p>
 
 ## Splunk Filter
+
+### Atomic Test #1 - Reg Key Run
+As per the Atomic Red Team attack we made changes to the following registry: HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run. Next we can see that these changes were picked up by Sysmon Operation, which is monitoring that specific registry for any changes. 
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Registry%20Run%20Keys%20and%20Startup%20Folder/Screenshots/3.png">
+</p>
