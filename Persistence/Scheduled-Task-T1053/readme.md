@@ -14,11 +14,11 @@ The assumptions that we took was that the end point victim machine was already c
 # Execution
 ## Tests
 
-- [Atomic Test #1 - At.exe Scheduled task](#atomic-test-1---atexe-scheduled-task)
+- [Atomic Test #1 - At.exe Scheduled task](#test-1---atexe-scheduled-task)
 
-- [Atomic Test #2 - Scheduled task Local](#atomic-test-2---scheduled-task-local)
+- [Atomic Test #2 - Scheduled task Local](#test-2---scheduled-task-local)
 
-- [Atomic Test #3 - Scheduled task Remote](#atomic-test-3---scheduled-task-remote)
+- [Atomic Test #3 - Scheduled task Remote](#test-3---scheduled-task-remote)
 
 
 <br/>
