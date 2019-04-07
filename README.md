@@ -102,6 +102,32 @@ Query Registry: https://attack.mitre.org/techniques/T1012/ : Done
 
 SIP Trust Provider Hijacking: https://attack.mitre.org/techniques/T1198/ : Done
 
+Laksman's Part: 
+
+Hardware Additions: https://attack.mitre.org/techniques/T1200/ : Done
+
+Execution through Module Load: https://attack.mitre.org/techniques/T1129/ : Cannot be done
+
+Exploitation for Client Execution: https://attack.mitre.org/techniques/T1203/ : Cannont be done
+
+Port Monitors: https://attack.mitre.org/techniques/T1013/ : Done
+
+Redundant Access: https://attack.mitre.org/techniques/T1108/ : Cannont be done
+
+Registry Run Keys / Startup Folder: https://attack.mitre.org/tactics/TA0003/ : Done
+
+Hooking: https://attack.mitre.org/techniques/T1179/ : Cannot be done
+
+Image File Execution Options Injection: https://attack.mitre.org/techniques/T1183/ : Done
+
+New Service: https://attack.mitre.org/techniques/T1050/ : Done
+
+Deobfuscate/Decode Files or Information: https://attack.mitre.org/techniques/T1140/ : Done
+
+Extra Window Memory Injection: https://attack.mitre.org/techniques/T1181/ : Cannot be done
+ 
+
+
 
 
 
