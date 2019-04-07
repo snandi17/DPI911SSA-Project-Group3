@@ -76,15 +76,25 @@ SCHTASKS /Create /S #{target} /RU #{user_name} /RP #{password} /TN "Atomic task"
 ```
 <br/>
 
+# [Detection](https://attack.mitre.org/techniques/T1053/)
+<blockquote>
+Monitor scheduled task creation from common utilities using command-line invocation. Legitimate scheduled tasks may be created during installation of new software or through system administration functions. Monitor process execution from the svchost.exe in Windows 10 and the Windows Task Scheduler taskeng.exe for older versions of Windows. [64] If scheduled tasks are not used for persistence, then the adversary is likely to remove the task when the action is complete. Monitor Windows Task Scheduler stores in %systemroot%\System32\Tasks for change entries related to scheduled tasks that do not correlate with known software, patch cycles, etc. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as network connections made for Command and Control, learning details about the environment through Discovery, and Lateral Movement.
+</blockquote>
+
 ## Splunk Filter
 The following splunk query will allow us to detect these techniques
 
-<b>Filter 1:</b>
+<b>Filter 1: Test 1 - At.exe Scheduled task</b>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Scheduled-Task-T1053/task/Windows%20Server%202012-2019-04-07-18-06-02.png">
 </p>
 
-<b>Filter 2:</b>
+<b>Filter 2: Test 2 - Scheduled task Local</b>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Scheduled-Task-T1053/task/Task.png">
+</p>
+
+<b>Filter 3: Test 3 - Scheduled task Remote</b>
+<p align="center">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Scheduled-Task-T1053/task/Task3.png">
 </p>
