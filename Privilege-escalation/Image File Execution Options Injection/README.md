@@ -9,6 +9,7 @@ IFEOs can be set directly via the Registry or in Global Flags via the GFlags too
 </blockquote>
 
 # Assumption
+The assumption here is that no user on the endpoint should be using a debugger in the first place. Therefore, if it were compromised and an adversary uses a debugger we would be monitoring the correct registry for changes.
 
 # Execution
 
