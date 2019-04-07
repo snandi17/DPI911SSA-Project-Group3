@@ -41,3 +41,30 @@ As per the Atomic Red Team attack we made changes to the following registry: HKC
 <p>
   <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Registry%20Run%20Keys%20and%20Startup%20Folder/Screenshots/3.png">
 </p>
+
+Following Splunk filter will monitor and for changes made to this director: host=SPLUNKFWD splwow64 EventID=13 TargetObject="HKU\\S-1-5-21-2374700888-3469647544-1377038430-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\C:\\Windows\\*" tag=change
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Registry%20Run%20Keys%20and%20Startup%20Folder/Screenshots/4.png">
+</p>
+
+### Atomic Test #2 - Reg Key RunOnce
+Here we make changes to the following registry, HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run. In the background we can see that Sysmon has picked up activity on its log. 
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Registry%20Run%20Keys%20and%20Startup%20Folder/Screenshots/5.png">
+</p>
+
+Following Splunk filter will allow us to monitor changes to this registry: host=SPLUNKFWD object_path="HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx\\*" tag=change EventID=13
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Registry%20Run%20Keys%20and%20Startup%20Folder/Screenshots/6.png">
+</p>
+
+### Atomic Test #3 - PowerShell Registry RunOnce
+Here we see attempts to the registry key made from PowerShell appearing in Sysmon logs as per the third Red Atomic attack
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Registry%20Run%20Keys%20and%20Startup%20Folder/Screenshots/7.png">
+</p>
+
+Following Splunk filter can monitor the registry key NextRun for changes along with the user of the PowerShell process. host=SPLUNKFWD object_path="HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\NextRun" EventID=12 process="powershell.exe" object=NextRun
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Registry%20Run%20Keys%20and%20Startup%20Folder/Screenshots/8.png">
+</p>
