@@ -81,6 +81,13 @@ SCHTASKS /Create /S #{target} /RU #{user_name} /RP #{password} /TN "Atomic task"
 Monitor scheduled task creation from common utilities using command-line invocation. Legitimate scheduled tasks may be created during installation of new software or through system administration functions. Monitor process execution from the svchost.exe in Windows 10 and the Windows Task Scheduler taskeng.exe for older versions of Windows. [64] If scheduled tasks are not used for persistence, then the adversary is likely to remove the task when the action is complete. Monitor Windows Task Scheduler stores in %systemroot%\System32\Tasks for change entries related to scheduled tasks that do not correlate with known software, patch cycles, etc. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as network connections made for Command and Control, learning details about the environment through Discovery, and Lateral Movement.
 </blockquote>
 
+## Visibility 
+
+<b>Sysmon must be enabled on the end point and Splunk Forwarder must be forwarding events from Microsoft-Windows-TaskScheduler/Operational. The Event ID 106 - Scheduled task registered and Event ID 140 - Scheduled task updatedindicates , therefore this is the EvendID analysts need to look out for.</b>
+<p align="center">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Scheduled-Task-T1053/task/visibility2.png">
+</p>
+
 ## Splunk Filter
 The following splunk query will allow us to detect these techniques
 
