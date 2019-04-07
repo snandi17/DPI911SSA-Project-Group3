@@ -29,7 +29,7 @@ reg query HKCU /f password /t REG_SZ /s
 ```
 <br/>
 
-# [Detection] (https://attack.mitre.org/techniques/T1214/)
+# [Detection](https://attack.mitre.org/techniques/T1214/)
 
 Monitor processes for applications that can be used to query the Registry, such as Reg, and collect command parameters that may indicate credentials are being searched. Correlate activity with related suspicious behavior that may indicate an active intrusion to reduce false positives.
 
