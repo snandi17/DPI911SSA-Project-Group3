@@ -16,8 +16,18 @@ There were not Atomics from the Red-Atomic team for this technique.
 
 ## Visibility
 Ensure that Sysmon is monitoring changes to the following registry: HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Port%20Monitors/Screenshots/1.png">
+</p>
+
 Ensure that sysmonconfig-export.xml configuration file is updated to monitor changes to the specified registry above
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Port%20Monitors/Screenshots/2.png">
+</p>
 
 ## Splunk Filter
 You want to monitor for EventID 12 at the specified registry, any changes, additions or keys deleted should be alerted.
 host=SPLUNKFWD signature="Registry object added or deleted"  EventID=12 object_path="HKLM\\System\\CurrentControlSet\\Control\\Print\\Monitors\\*"
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Persistence/Port%20Monitors/Screenshots/3.png">
+</p>
