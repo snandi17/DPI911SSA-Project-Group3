@@ -17,5 +17,41 @@ Execution applied as per the methods outlined by the Red Atomics team, https://g
 # Detection
 
 ## Visibility
+Ensure that the registry HKLM\SOFTWARE{\Wow6432Node}\Microsoft\Windows NT\CurrentVersion\Image File Execution Options is being monitored. As this techniques involves the debugger attaching to this registry before spawning a new process.
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Privilege-escalation/Image%20File%20Execution%20Options%20Injection/Screenshots/1.png">
+</p>
+
+Next make the changes in the sysmonconfig-export.xml files are updated. 
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Privilege-escalation/Image%20File%20Execution%20Options%20Injection/Screenshots/2.png">
+</p>
 
 ## Splunk Filter
+
+### Atomic Test #1 - IFEO Add Debugger
+As we can see here that Sysmon is picking up changes to the registry in question after applying our attack from Red Atomics.
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Privilege-escalation/Image%20File%20Execution%20Options%20Injection/Screenshots/3.png">
+</p>
+
+Following Splunk filter allows us to monitor changes to the specified registry for any changes, the main objective here is to catch the “debugger” object being used. host=SPLUNKFWD winword object_path="HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\*" EventID=13 object=Debugger
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Privilege-escalation/Image%20File%20Execution%20Options%20Injection/Screenshots/4.png">
+</p>
+
+### Atomic Test #2 - IFEO Global Flags
+Following Splunk filter will capture changes to the registry in question as well as the object GlobalFlag: 
+host=SPLUNKFWD winword object_path="HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\*" EventID=13 object=GlobalFlag
+<p>
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Privilege-escalation/Image%20File%20Execution%20Options%20Injection/Screenshots/5.png">
+</p>
+
+
+
+
+
+
+
+
+
