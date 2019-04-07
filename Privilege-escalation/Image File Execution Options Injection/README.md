@@ -12,6 +12,7 @@ IFEOs can be set directly via the Registry or in Global Flags via the GFlags too
 The assumption here is that no user on the endpoint should be using a debugger in the first place. Therefore, if it were compromised and an adversary uses a debugger we would be monitoring the correct registry for changes.
 
 # Execution
+Execution applied as per the methods outlined by the Red Atomics team, https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1183/T1183.md#atomic-test-1---ifeo-add-debugger
 
 # Detection
 
