@@ -9,7 +9,7 @@ Pass the hash (PtH) is a method of authenticating as a user without having acces
 # Assumption
 The assumptions that we took was that the end point victim machine was already compromised. and the attacker has access to user memory.
 
-# Execution
+# [Execution](https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1075/T1075.md)
 <br/>
 
 ## Atomic Test #1 - Mimikatz Pass the Hash
