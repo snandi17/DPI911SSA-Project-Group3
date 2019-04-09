@@ -9,7 +9,6 @@ def is_admin():
 
 def baseline():
     if is_admin():
-        # Code of your program here
         os.system("listdlls64.exe -a > dll-load.txt")
         print("Done! List-dlls in a file")
     else:
@@ -54,8 +53,6 @@ def store_fun(lines, fileout):
     
     for element in empty_list:
         if "pid:" in element:
-            #print(element)
-            #print(empty_list[empty_list.index(element)+4])
             file_open.write(str(element)+'\n')
             file_open.write(str(empty_list[empty_list.index(element)+4])+'\n')
         for ele in element:
@@ -74,16 +71,10 @@ def search_fun(lines, search, filename):
         empty_list.append(line)
         
     r = re.compile(r'.*[\.dll]')
-    #r2 = re.compile(r'.*[\.EXE]')
-    
+  
     wl = True 
     count = True
-    #for string in search:
-        #if string == ".":
-            #break
-        #filename += string
-        #if string != "." or string !="E" or string !="x":
-        #   filename += string 
+   
     print(filename)
     
     file_open = open(filename,"w")
@@ -104,8 +95,15 @@ def search_fun(lines, search, filename):
     file_open.close()
     
 
+#############
+#Create a baseline uncomment the baseline function. 
+#############
 
 #baseline()
+
+#############
+# To collect the dlls for all running process uncomment dll_sideload() function.
+#############
 #dll_sideload()
 
 file_name = "dll-load.txt"
@@ -115,16 +113,12 @@ def parse_file(baseline_file_name, sideload_file_name, search, compare):
     sideload_P = open_file(sideload_file_name)
     store_fun(baseline_P,"baseline.txt")
     store_fun(sideload_P,"sideload-dll.txt")
-    
-#parse_file("dll-load.txt", "dll-side-load.txt","hello","hi")
-#load_P = open_file("sideload-dll.txt")
 
 sideload_P = open_file("dll-load.txt")
 load_P = open_file("baseline.txt")
-search_fun(sideload_P,"POWERPNT.EXE","POWERPNT1.txt")
+search_fun(sideload_P,"POWERPNT.EXE","POWERPNT1.txt") # powerpnt.exe is an example program that we analyse the dlls for.
 search_fun(load_P,"POWERPNT.EXE","POWERPNT2.txt")
 
-#print(filecmp.cmp('sideload-dll.txt','baseline.txt'))
 print(filecmp.cmp('POWERPNT2.txt','POWERPNT1.txt'))
 
 
