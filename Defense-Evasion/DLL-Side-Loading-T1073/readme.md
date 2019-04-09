@@ -9,33 +9,23 @@ The Registry contains a significant amount of information about the operating sy
 </blockquote>
 
 # Assumption
-The assumptions that we took was that the end point victim machine was already compromised, and that any queries that were made to registries were done by the attacker in an attempt to gather information. We also asume that regular users do not make queries to the registry from command line.
+The assumptions that we took was that the end point victim machine was already compromised, and that a vulnerable application was already compramised with the dll side loading to run commands.
 
 # Execution
-The Atomic-Red-Team T1089 module describes the test for this technique (https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1012/T1012.md)
 
-<b>Test 1:</b>
-<p align="center">
-  <img src="">
-</p>
-
-<b>Test 2:</b>
-<p align="center">
-  <img src="">
-</p>
+there is no Atomic module for this Technique , so to execute this, we modified the dll used and checked the hash of the dll to see if any changes where made. to the dll that the programe was using.
 
 # Detection
-Detection is done by monitoring processes and command line arguments. we look for the arguments like taskkill and fltmc.exe unload which could indicate tools are being disabled.
+Detection is done by monitoring processes of services and creating a baseline of dlls their where using once the dll was changes we comepare the hash found in the baseline and the one with the dll side loading and if they don't match that means the dll has been modified.
 
-## Splunk Filter
-The following splunk query will allow us to detect these techniques
-
-<b>Filter 1:</b>
+<b>Test 1: compare the dll with the baseline no changes made</b>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/DLL-Side-Loading-T1073/Pictures/same.png">
 </p>
 
-<b>Filter 2:</b>
+<b>Test 2: compare the dll with the side loaded dll (i.e changes) the test shows failed</b>
 <p align="center">
-  <img src="">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/DLL-Side-Loading-T1073/Pictures/Windows7_Victim-2019-04-09-19-07-31.png">
 </p>
+
+
