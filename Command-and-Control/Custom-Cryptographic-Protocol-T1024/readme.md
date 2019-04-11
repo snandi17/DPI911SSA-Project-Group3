@@ -3,20 +3,28 @@
 ## T1024 - Custom Cryptographic Protocol
 ## [Description from ATT&CK](https://attack.mitre.org/techniques/T1024/)
 
-{blockquotes}
-"Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Credentialing and authentication mechanisms may be targeted for exploitation by adversaries as a means to gain access to useful credentials or circumvent the process to gain access to systems. One example of this is MS14-068, which targets Kerberos and can be used to forge Kerberos tickets using domain user permissions. [1] [2] Exploitation for credential access may also result in Privilege Escalation depending on the process targeted or credentials obtained."
-{/blockquotes}
+<blockquote>
+"Adversaries may use a custom cryptographic protocol or algorithm to hide command and control traffic. A simple scheme, such as XOR-ing the plaintext with a fixed key, will produce a very weak ciphertext.
+
+Custom encryption schemes may vary in sophistication. Analysis and reverse engineering of malware samples may be enough to discover the algorithm and encryption key used.
+
+Some adversaries may also attempt to implement their own version of a well-known cryptographic algorithm instead of using a known implementation library, which may lead to unintentional errors."
+</blockquotes>
 
 # Assumption
-we have to assume that the attacker already has access to the internal systems/networks in some cases. but the vulnerable software may also be publicly facing too 
+
 
 
 # Execution
-There does not exist a atomic-red-team module, but one way to  use this technique is by finding a vulnerability in a software that allows you harvest or extract user credentials a good example of this would be to use the  MS14-068 flaw in Kerberos that allows an already authenticated domain account to elevate permissions to compromise an entire domain  
+
  
 
-# [Detection](https://attack.mitre.org/techniques/T1212/)
-"Detecting software exploitation may be difficult depending on the tools available. Software exploits may not always succeed or may cause the exploited process to become unstable or crash. Also look for behavior on the system that might indicate successful compromise, such as abnormal behavior of processes. Credential resources obtained through exploitation may be detectable in use if they are not normally used or seen."
+# [Detection](https://attack.mitre.org/techniques/T1024/)
+<blockquote>
+"If malware uses custom encryption with symmetric keys, it may be possible to obtain the algorithm and key from samples and use them to decode network traffic to detect malware communications signatures.
 
+In general, analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect when communications do not follow the expected protocol behavior for the port that is being used.
+"
+</blockquote>
 
 
