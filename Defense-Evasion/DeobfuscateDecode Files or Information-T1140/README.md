@@ -19,11 +19,11 @@ The Atomic-Red-Team T1140 module describes the test for this technique (https://
 ## Visibility
 Detection is done by monitoring process and command line for the malicious behavior mentioned in the assumption section for the “certutil” utility. Using the “-encode” and the “-decode” options with this utility indicate malicious behavior. 
 <p>
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/DeobfuscateDecode%20Files%20or%20Information/Screenshots/1.png">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/DeobfuscateDecode%20Files%20or%20Information-T1140/Screenshots/1.png">
 </p>
 
 ## Splunk Filter
 The following splunk query will allow us to detect this technique: host=SPLUNKFWD "C:\\Windows\\System32\\certutil"
 <p>
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/DeobfuscateDecode%20Files%20or%20Information/Screenshots/2.png">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Defense-Evasion/DeobfuscateDecode%20Files%20or%20Information-T1140/Screenshots/2.png">
 </p>
