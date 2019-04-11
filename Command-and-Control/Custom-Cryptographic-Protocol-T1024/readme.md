@@ -3,9 +3,9 @@
 ## T1024 - Custom Cryptographic Protocol
 ## [Description from ATT&CK](https://attack.mitre.org/techniques/T1024/)
 
-{blockquote}
+{blockquotes}
 "Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Credentialing and authentication mechanisms may be targeted for exploitation by adversaries as a means to gain access to useful credentials or circumvent the process to gain access to systems. One example of this is MS14-068, which targets Kerberos and can be used to forge Kerberos tickets using domain user permissions. [1] [2] Exploitation for credential access may also result in Privilege Escalation depending on the process targeted or credentials obtained."
-{/blockquote}
+{/blockquotes}
 
 # Assumption
 we have to assume that the attacker already has access to the internal systems/networks in some cases. but the vulnerable software may also be publicly facing too 
