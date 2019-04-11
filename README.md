@@ -64,10 +64,6 @@ Week Mar: 24 – 30	Date: Thursday 28th	Demo D, H
 
 Week Mar/Arp: 31 -6	Date: Thursday 4th	Report week
 
-
-
-Ahmed's Part: 
-
 DLL Side-Loading : https://attack.mitre.org/techniques/T1073 : Done
 
 Credentials in Registry : https://attack.mitre.org/techniques/T1214 : Done
@@ -84,8 +80,6 @@ Pass the Hash : https://attack.mitre.org/techniques/T1075 : Working on it
 
 Pass the Ticket : https://attack.mitre.org/techniques/T1097 : can not be done
 
-Roydon's Part:
-
 Data from Network Shared Drive: https://attack.mitre.org/techniques/T1039/ : Done
 
 Disabling Security Tools: https://attack.mitre.org/techniques/T1089/ : Done
@@ -101,8 +95,6 @@ Process Discovery: https://attack.mitre.org/techniques/T1057/ : Done
 Query Registry: https://attack.mitre.org/techniques/T1012/ : Done
 
 SIP Trust Provider Hijacking: https://attack.mitre.org/techniques/T1198/ : Done
-
-Laksman's Part: 
 
 Hardware Additions: https://attack.mitre.org/techniques/T1200/ : Done
 
