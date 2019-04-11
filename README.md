@@ -1,4 +1,4 @@
-# DPI911SSA-Project
+# DPI911-Project
 Project Report
 
 Each group is assigned different techniques and tactics in MITRE attack framework. Use this excel sheet to see what techniques and tactics are assigned to you. 
