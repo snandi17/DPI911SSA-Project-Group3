@@ -15,12 +15,12 @@ To execute this we inserted USB drives into a an endpoint in our test environmen
 Sysmon must be enabled on the end point and Splunk Forwarder must be forwarding events from DriverFrameworks-Usermode/Operational.
 The EventID 2100 indicates new hardware additions, therefore this is the EvendID analysts need to look out for.
 <p>
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Initial-Access/Hardware%20Additions/Screenshots/1.png">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Initial-Access/Hardware%20Additions-T1200/Screenshots/1.png">
 </p>
 
 ## Splunk Filter
 The Splunk filter we used to find this event on our end point: 
 host=SPLUNKFWD sourcetype="XMLWinEventLog:Microsoft-Windows-DriverFrameworks-UserMode/Operational" EventID 2101
 <p>
-  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Initial-Access/Hardware%20Additions/Screenshots/2.png">
+  <img src="https://github.com/ayusuf15/DPI911SSA-Project-Group3/blob/master/Initial-Access/Hardware%20Additions-T1200/Screenshots/2.png">
 </p>
