@@ -9,7 +9,7 @@
 Custom encryption schemes may vary in sophistication. Analysis and reverse engineering of malware samples may be enough to discover the algorithm and encryption key used.
 
 Some adversaries may also attempt to implement their own version of a well-known cryptographic algorithm instead of using a known implementation library, which may lead to unintentional errors."
-</blockquotes>
+</blockquote>
 
 # Assumption
 
